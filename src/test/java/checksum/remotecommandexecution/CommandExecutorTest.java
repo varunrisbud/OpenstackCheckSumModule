@@ -11,9 +11,9 @@ import org.omg.CORBA.portable.Streamable;
 import java.util.List;
 
 public class CommandExecutorTest {
-    private static String userName = "student";
-    private static String password = "Cmpe86754231!";
-    private static String host = "130.65.159.58";
+    private static String userName = "alcohol";
+    private static String password = "helloworld";
+    private static String host = "130.165.159.158";
     private static int port = 22;
     private CommandExecutor commandExecutor = new CommandExecutor(userName, password, host);
 
