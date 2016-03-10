@@ -12,7 +12,7 @@ public class ImagesTest {
     public void getNameByIDTest() {
         try {
             Images glanceImage = new Images();
-            assertEquals("Ubuntu 14.04 Server", glanceImage.getNameByID("7f6201b7-94ba-4dc9-96fa-bb2003fe152f"));
+            assertEquals("Ubuntu 14.04 Server.iso", glanceImage.getNameByID("7f6201b7-94ba-4dc9-96fa-bb2003fe152f"));
         } catch (Exception e) {
             e.printStackTrace();
         }

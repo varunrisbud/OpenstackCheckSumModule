@@ -22,12 +22,12 @@ public class Images extends ConnectionClass{
 
         public String getNameByID(String imageID) {
             StringBuilder query = new StringBuilder();
-            query.append("Select Name from images where ID=").append("'").append(imageID).append("'");
+            query.append("Select Name, disk_format from images where ID=").append("'").append(imageID).append("'");
             String imageName = "not found";
             try {
                 ResultSet resultSet = super.executeQuery(query.toString());
                 while (resultSet.next()) {
-                    imageName = resultSet.getString("Name");
+                    imageName = resultSet.getString("Name") + "." + resultSet.getString("disk_format");
                 }
             } catch (Exception e) {
                 e.printStackTrace();

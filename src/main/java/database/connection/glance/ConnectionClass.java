@@ -13,7 +13,6 @@ public class ConnectionClass {
     private Connection connect = null;
     private Statement statement = null;
     private ResultSet resultSet = null;
-
     public ConnectionClass() throws Exception {
         this.createConnection();
     }

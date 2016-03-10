@@ -4,7 +4,6 @@ import com.jcraft.jsch.ChannelExec;
 import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.Session;
 
-import java.awt.*;
 import java.io.*;
 import java.util.*;
 import java.util.List;
@@ -147,10 +146,10 @@ public class CommandExecutor {
             session.disconnect();
 
             if(exitStatus < 0){
-                System.out.println("Done, but exit status not set!");
+                //System.out.println("Done, but exit status not set!");
             }
             else if(exitStatus > 0){
-                System.out.println("Done, but with error!");
+                //System.out.println("Done, but with error!");
             }
             else{
                 System.out.println("Done!");
